@@ -25,8 +25,8 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
 
-  TextEditingController _username = TextEditingController();
-  TextEditingController _password = TextEditingController();
+  final TextEditingController _username = TextEditingController();
+  final TextEditingController _password = TextEditingController();
   bool hidePassword = true;
   String loginMsg = "";
 
@@ -161,7 +161,7 @@ class _MyAppState extends State<MyApp> {
                 ),
               ),
               SizedBox(height: 20,),
-              Text('$loginMsg', style: TextStyle(color: CupertinoColors.destructiveRed, fontWeight: FontWeight.bold)),
+              Text(loginMsg, style: TextStyle(color: CupertinoColors.destructiveRed, fontWeight: FontWeight.bold)),
               SizedBox(height: 20,),
               CupertinoButton(
                   borderRadius: BorderRadius.all(Radius.circular(25)),

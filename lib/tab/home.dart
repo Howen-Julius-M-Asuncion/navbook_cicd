@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '/page/profile.dart';
-import '/main.dart';
 import '/appcolors.dart';
 
 
@@ -131,7 +130,7 @@ class _HomepageState extends State<Homepage> {
                         ),
                         SizedBox(height: 10),
                         // Row for attachment
-                        Container(
+                        SizedBox(
                           width: double.infinity,
                           height: 175,
                           child: FittedBox(

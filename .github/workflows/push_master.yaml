@@ -28,6 +28,11 @@ jobs:
       - name: Ensure App Builds
         run: flutter build apk --release
 
+      - name: Delete Existing Tag (if exists)
+        run: |
+          git push --delete origin flutter-android || true
+          git tag -d flutter-android || true
+
       - name: Upload Release to GitHub
         uses: ncipollo/release-action@v1
         with:

@@ -1,10 +1,12 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/cupertino.dart' show BottomNavigationBarItem, BuildContext, CupertinoIcons, CupertinoTabBar, CupertinoTabScaffold, Icon, StatelessWidget, Widget;
 import '/appcolors.dart';
 import '/tab/home.dart';
 import '/tab/navigate.dart';
 import '/tab/notifications.dart';
 
 class Indexpage extends StatelessWidget {
+  const Indexpage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return CupertinoTabScaffold(
